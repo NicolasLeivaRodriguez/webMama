@@ -18,7 +18,7 @@
   esta página desde el menú público ni la compartas.
 */
 
-const ADMIN_PASSWORD = "cambia-esta-clave"; // TODO: pon aquí tu propia contraseña
+const ADMIN_PASSWORD = "Mayo1399."; // TODO: pon aquí tu propia contraseña
 
 let catalogoActual = [...PRODUCTOS];
 
