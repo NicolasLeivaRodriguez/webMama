@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin · webMama</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- ===================== LOGIN ===================== -->
+  <div id="pantalla-login" class="admin-login">
+    <form id="form-login" class="admin-login__caja">
+      <h1>🔒 Acceso admin</h1>
+      <p>Esto solo deberías verlo tú.</p>
+      <input type="password" id="campo-password" placeholder="Contraseña" required>
+      <button type="submit" class="boton boton--primario">Entrar</button>
+      <p id="error-login" class="admin-login__error" hidden>Contraseña incorrecta</p>
+    </form>
+  </div>
+
+  <!-- ===================== PANEL ===================== -->
+  <div id="panel-admin" class="contenedor admin-panel" hidden>
+    <h1 class="titulo-seccion" style="text-align:left">Panel de administración</h1>
+    <p class="admin-aviso">
+      ⚠️ Esta web es estática: aquí añades productos, y al terminar pulsas
+      <strong>"Descargar products.js"</strong> y sustituyes ese archivo en tu
+      proyecto antes de volver a subir la web.
+    </p>
+
+    <div class="admin-grid">
+      <!-- Formulario -->
+      <section class="admin-tarjeta">
+        <h2>Añadir producto</h2>
+        <form id="form-producto" class="admin-form">
+          <label>
+            Nombre
+            <input type="text" id="campo-nombre" required>
+          </label>
+
+          <label>
+            Precio (€)
+            <input type="number" id="campo-precio" step="0.01" min="0" required>
+          </label>
+
+          <label>
+            Categoría
+            <select id="campo-categoria" required>
+              <option value="Letreros">Letreros</option>
+              <option value="Chupeteros">Chupeteros</option>
+              <option value="Doudous">Doudous</option>
+              <option value="Otros">Otros</option>
+              <option value="__nueva__">+ Nueva categoría...</option>
+            </select>
+          </label>
+          <input type="text" id="campo-categoria-nueva" placeholder="Nombre de la nueva categoría" hidden>
+
+          <label>
+            Descripción
+            <textarea id="campo-descripcion" rows="3"></textarea>
+          </label>
+
+          <label>
+            Imagen
+            <input type="text" id="campo-imagen" placeholder="img/productos/mi-foto.jpg" required>
+          </label>
+          <p class="admin-ayuda">
+            Sube antes la foto a la carpeta <code>img/productos/</code> de tu proyecto,
+            y escribe aquí el nombre del archivo tal cual, por ejemplo
+            <code>img/productos/letrero-maria.jpg</code>.
+          </p>
+
+          <label class="admin-checkbox">
+            <input type="checkbox" id="campo-destacado">
+            Marcar como destacado
+          </label>
+
+          <button type="submit" class="boton boton--primario">Añadir a la lista</button>
+        </form>
+      </section>
+
+      <!-- Lista actual -->
+      <section class="admin-tarjeta">
+        <h2>Catálogo actual (<span id="contador-admin"></span>)</h2>
+        <div id="lista-admin" class="lista-admin"></div>
+        <button id="boton-descargar" type="button" class="boton boton--whatsapp" style="margin-top:18px;width:100%;justify-content:center;">
+          ⬇️ Descargar products.js
+        </button>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
