@@ -448,6 +448,7 @@ h1, h2, h3 {
 .sobre-mi__texto p {
   margin-top: 14px;
   line-height: 1.6;
+  white-space: pre-line;
 }
 
 /* ===================== CONTACTO ===================== */

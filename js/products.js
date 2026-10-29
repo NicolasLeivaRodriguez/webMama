@@ -27,7 +27,7 @@
 const PRODUCTOS = [
   {
     id: "ejemplo-letrero-1",
-    nombre: "Letrero personalizado (EJEMPLO)",
+    nombre: "Letrero personalizado",
     precio: 24.9,
     categoria: "Letreros",
     descripcion: "Letrero tejido a mano con el nombre que quieras, ideal para decorar la habitación.",
@@ -36,7 +36,7 @@ const PRODUCTOS = [
   },
   {
     id: "ejemplo-letrero-2",
-    nombre: "Letrero con lazo (EJEMPLO)",
+    nombre: "Letrero con lazo",
     precio: 27.5,
     categoria: "Letreros",
     descripcion: "Letrero colgante con detalles de lazo, perfecto para un regalo especial.",
@@ -45,7 +45,7 @@ const PRODUCTOS = [
   },
   {
     id: "ejemplo-chupeteros",
-    nombre: "Chupetero tejido (EJEMPLO)",
+    nombre: "Chupetero tejido",
     precio: 9.9,
     categoria: "Chupeteros",
     descripcion: "Sujeta chupetes de crochet, disponible en varios colores y diseños.",
@@ -54,11 +54,20 @@ const PRODUCTOS = [
   },
   {
     id: "ejemplo-doudou",
-    nombre: "Doudou conejito (EJEMPLO)",
+    nombre: "Doudou conejito",
     precio: 19.9,
     categoria: "Doudous",
     descripcion: "Muñeco con manta de apego, super suave, ideal para los más pequeños.",
     imagen: "img/productos/ejemplo-doudou.jpg",
     destacado: true,
+  },
+  {
+    id: "letrero-ambar",
+    nombre: "Letrero Ámbar",
+    precio: 24.9,
+    categoria: "Letreros",
+    descripcion: "Guirnalda tejida a mano con el nombre Ámbar, en tonos rosa y blanco con flores y borlas de remate.",
+    imagen: "img/productos/letrero-ambar.png",
+    destacado: false,
   },
 ];

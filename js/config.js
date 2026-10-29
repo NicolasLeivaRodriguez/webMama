@@ -8,7 +8,7 @@
 
 const CONFIG = {
   // Nombre del negocio (aparece en el header, el título de la pestaña y el footer)
-  nombreNegocio: "Nombre del negocio",
+  nombreNegocio: "Las Manitas de la Abuela",
 
   // Frase corta que aparece debajo del nombre, en el header
   eslogan: "Hecho a mano con cariño",
@@ -20,8 +20,8 @@ const CONFIG = {
   // Texto de la sección "Sobre mí"
   sobreMiTitulo: "Sobre mí",
   sobreMiTexto:
-    "Escribe aquí tu historia: desde cuándo tejes, por qué empezaste, qué te gusta de hacer estos detalles a mano... Las vecinas y amigas que visiten la web lo van a leer con cariño.",
-  sobreMiImagen: "img/hero-ejemplo.jpg", // TODO: cambia por una foto tuya o de tu taller
+    "¡Hola! 💕 Soy las manos que dan vida a Las Manitas de la Abuela, un pequeño rincón creado con mucho amor e ilusión. Todo comenzó haciendo cositas especiales para mis nietos, y poco a poco descubrí que crear con mis manos se había convertido en una de mis mayores pasiones. El crochet es para mí una forma de desconectar, relajarme y disfrutar dejando volar mi imaginación. Cada pieza está hecha a mano, con mucho cariño, dedicación y un pedacito de mi corazón. ❤️\n\n¿Te gustaría tener algo único y especial? ✨ Echa un vistazo a mis creaciones y déjate enamorar por los pequeños detalles hechos con amor. ¡Estaré encantada de crear algo bonito para ti! 🧶💕",
+  sobreMiImagen: "img/sobre-mi.jpg",
 
   // Número de WhatsApp SIN espacios ni símbolos, con prefijo de país
   // Ejemplo España: 34 600 00 00 00  ->  "34600000000"
