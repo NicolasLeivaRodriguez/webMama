@@ -25,7 +25,7 @@ const CONFIG = {
 
   // Número de WhatsApp SIN espacios ni símbolos, con prefijo de país
   // Ejemplo España: 34 600 00 00 00  ->  "34600000000"
-  whatsapp: "34600000000",
+  whatsapp: "34610399050",
 
   // Instagram (deja vacío "" si no tienes, y el icono no se mostrará)
   instagram: "",
