@@ -70,4 +70,13 @@ const PRODUCTOS = [
     imagen: "img/productos/letrero-ambar.png",
     destacado: false,
   },
+  {
+    id: "letrero-aleix",
+    nombre: "Letrero Aleix",
+    precio: 24.9,
+    categoria: "Letreros",
+    descripcion: "Guirnalda tejida a mano con el nombre Aleix, en colores vivos, ideal para decorar la habitación.",
+    imagen: "img/productos/letrero-aleix.jpg",
+    destacado: false,
+  },
 ];
